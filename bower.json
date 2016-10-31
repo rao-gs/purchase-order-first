@@ -1,0 +1,20 @@
+{
+  "name": "purchase_app",
+  "description": "",
+  "authors": [
+    "rao-gs <raogsm7@gmail.com>"
+  ],
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8"
+  }
+}

@@ -1,0 +1,48 @@
+<div id="stockList">
+<div class="container-fluid">
+  <div class="product_form">
+    <h2>Add a New Product!</h2>
+  <form ng-submit="createProduct()">
+    Name: <input type="text" ng-model="newProduct.name"><br />
+    Description: <input type="text" ng-model="newProduct.description" /><br />
+    Quantity: <input type="Number" name="Quantity" ng-model="newProduct.quantity" value="">
+    Unit of Measure: <input type="text" ng-model="newProduct.uom"><br />
+    <br />
+    <input type="submit" value="Add Product">
+  </form>
+  </div>
+  <p><a href="#/orders" class="btn btn-primary" role="button">Place Order</a></p>
+  <h2>Stock</h2>
+  <div class="row">
+    <div class="">
+      <div class="row">
+        <div class="order_list">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>CB</th>
+              <th>Product Name</th>
+              <th>Product Description</th>
+              <th>Available Quantity</th>
+              <th>UOM</th>
+              <th>Storage Location</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <div id="orderList">
+          <tbody ng-repeat='product in products'>
+            <tr>
+              <td><input type="checkbox" name="checkBox"></td>
+              <td>{{product.name}}</td>
+              <td>{{product.description}}</td>
+              <td>{{product.quantity}}</td>
+              <td>{{product.uom}}</td>
+              <td>{{product.description}}</td>
+              <td ng-click='removeProduct(product._id)'><button>Remove</button></td>
+            </tr>
+          </tbody>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

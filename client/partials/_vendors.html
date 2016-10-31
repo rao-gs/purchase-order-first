@@ -1,0 +1,28 @@
+<div class="vend_form">
+  <h2>Supplier</h2>
+  <form ng-submit="createVendor()">
+    Supplier Name: <input type="text" ng-model="newVendor.name" />
+    Supplier Location <input type="text" ng-model="newVendor.location" />
+    <input type="submit" value="Add Supplier" />
+  </form>
+</div>
+<div class="vend_list">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Supplier</th>
+      <th>Location</th>
+      <th>Created Date</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="vendor in vendors">
+      <td>{{vendor.name}}</td>
+      <td>{{vendor.location}}</td>
+      <td>{{vendor.createdAt | date: short }}</td>
+      <td ng-click='removeVendor(vendor._id)'><button>Remove</button></td>
+    </tr>
+  </tbody>
+  </div>
+</table>

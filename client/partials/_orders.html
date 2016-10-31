@@ -1,0 +1,45 @@
+<h2>Orders!</h2>
+<div class="order_form">
+  <form >
+    Supplier:<select class="labelHeader" ng-model='newOrder._vendor'>
+          <option ng-repeat='vendor in vendors' value={{vendor._id}} ng-bind='vendor.name'></option>
+    </select>
+    <!-- <label><h3>Payment terms: </h3></label><input type="text" name="payment_term" value= " "></input> -->
+    Order Quantity: <select class="labelHeader" ng-model="newOrder.quantity">
+      <option value="1">1</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+    </select>
+    Product: <select class="labelHeader" ng-model='newOrder._product'>
+      <option ng-repeat='product in products' value={{product._id}} ng-bind='product.name'></option>
+    </select>
+    <br>
+    <input type="submit" ng-click="createOrder()" value="Add Order" />
+  </form>
+
+</div>
+<div class="order_list">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Supplier</th>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Date</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <div id="orderList">
+  <tbody ng-repeat='order in orders'>
+    <tr>
+      <td>{{order._vendor.name}}</td>
+      <td>{{order._product.name}}</td>
+      <td>{{order.quantity}}</td>
+      <td>{{order.createdAt | date: short }}</td>
+      <td ng-click='removeOrder(order._id)'><button>Cancel Order</button></td>
+    </tr>
+  </tbody>
+  </div>
+</table>
+</div>

@@ -1,0 +1,25 @@
+<div class="main_container-fluid">
+  <br />
+  <p><a href="#/products" class="btn btn-primary" role="button">View Stock</a></p>
+  <div class="left_block">
+    <h1>Product List:</h1>
+    <label>Search Products: <br />
+      <input ng-model="searchText"></label>
+      <table id="searchTextResults">
+        <tr><th>Product Name</th></tr>
+        <tr ng-repeat="product in products | filter:searchText">
+          <td><a href="#/products/{{product._id}}"</a>{{product.name}}</td>
+        </tr>
+      </table>
+  </div>
+  <div class="orders">
+    <h2>New Suppliers!</h2>
+    <ul ng-repeat='vendor in vendors'>
+      <li><h4>{{vendor.name}} created on {{vendor.createdAt | date: short }}</h4></li>
+    </ul>
+    <h2>New Orders!</h2>
+    <ul ng-repeat='order in orders'>
+      <li><h4>Purchase order created for {{order._vendor.name}} on {{ order.createdAt | date: short }} at {{order.createdAt | date: "h:mm a" }}</h4></li>
+    </ul>
+  </div>
+</div>

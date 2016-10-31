@@ -1,0 +1,128 @@
+* {
+margin-left: 10px;
+}
+.main_container-fluid {
+  display: inline-block;
+  border: 1px grey;
+}
+.left_block {
+  display: inline-block;
+  width: 40%;
+}
+.right_block {
+  display: inline-block;
+  width: 50%;
+}
+.thumbnail {
+  display: inline-block;
+}
+.product_form {
+  display: inline-block;
+}
+.searchProducts {
+  border: 1px blue;
+}
+.orders {
+  display: inline-block;
+  width: 30%;
+}
+.labelHeader {
+  width:150px;
+}
+
+.lavelHeader option {
+  width:150px;
+}
+
+/*.box { box-sizing: border-box; }
+
+#wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+/*.row {
+	padding-left: 20px;
+	clear: both;
+}*/
+
+/*.content { padding: 20px; }
+
+.column {
+	float: left;
+	padding-right: 20px;
+}
+
+#header-content { background-color: #D8D8DC; }
+
+#sidebar { background-color: #828284; }
+
+#itemview { background-color: lightblue; }
+
+@media only screen and (max-width: 480px) {
+	.twelve-s { width: 100%; }
+}
+
+@media only screen and (min-width: 481px) {
+	.eight-m { width: 66.66666666%; }
+	.seven-m { width: 58.33333333%; }
+	.five-m { width: 41.66666666%; }
+	.four-m { width: 33.33333333%; }
+}
+
+@media only screen and (min-width: 1024px) {
+	.eight-l { width: 66.66666666%; }
+	.four-l { width: 33.33333333%; }
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+textarea {
+  width:100%; }
+
+
+.scrollable-menu {
+    height: 50%;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+html, .container {
+    height: 100%;
+}
+.container {
+    display: table;
+    vertical-align: middle;
+    background-color: #f2f2f2;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+table, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: blue;
+  color: white;
+}
+tr {
+  border-collapse: collapse;
+}
+tbody {
+  border-spacing: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+label {
+    clear:both;
+}
+select {
+    float:left;
+}*/
