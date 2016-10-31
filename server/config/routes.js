@@ -1,7 +1,6 @@
 var Vendor = require('../controllers/vendors')
 var Product = require('../controllers/products')
 var Order = require('../controllers/orders')
-var PaymentTerm = require('../controllers/PaymentTerms')
 
 module.exports = function(app){
   app.get('/', function(req, res){
